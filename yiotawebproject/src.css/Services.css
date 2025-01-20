@@ -1,0 +1,149 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin-top: 30px;
+  margin-left: 20px;
+  padding-bottom: 10px;
+  padding-block: 5rem;
+  width: 100%;
+  h1 {
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+table {
+  width: 85%;
+  border-collapse: collapse;
+  box-shadow: 50px 30px 50px slategray;
+  table-layout: auto;
+  margin: 0 auto;
+}
+
+th {
+  background-color: black;
+  color: aquamarine;
+  font-size: xx-large;
+  padding: 10px;
+  text-align: center;
+}
+
+.services {
+  ul {
+    list-style-type: square;
+    list-style-position: inside;
+    margin-top: 10px;
+    padding-left: 0;
+
+    li {
+      color: black;
+      font-size: x-large;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+td {
+  padding: 20px;
+  vertical-align: top;
+}
+
+/*footer*/
+footer {
+  margin-top: auto;
+  padding: 2rem;
+  background-color: #0b0c0e;
+  width: 100%;
+
+  .container {
+    display: flex;
+    flex-wrap: warp;
+    .footerSocials {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      align-items: center;
+
+      div {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a {
+        margin: 0.2rem;
+        background-color: white;
+
+        border-radius: 14px;
+        display: flex;
+
+        transition: 400ms ease-in-out;
+
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+
+      a:hover {
+        margin: 0;
+        padding: 0.2rem;
+        border-radius: 8px;
+        background-color: aquamarine;
+      }
+
+      img:hover {
+      }
+    }
+  }
+  .footerBottom {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      display: flex;
+      gap: 0.5rem;
+
+      a {
+        text-decoration: none;
+        color: white;
+        transition: 200ms;
+      }
+
+      a:hover {
+        color: aquamarine;
+      }
+    }
+  }
+}
+
+#footerList {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  ul {
+    li {
+      padding: 0.4rem;
+    }
+  }
+}
