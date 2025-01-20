@@ -1,0 +1,347 @@
+/*general*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding-left: 80px;
+  background: black;
+  color: white;
+  padding-left: 5rem;
+}
+
+button {
+  color: white;
+  background-color: #0b0c0e;
+  padding: 0.8rem 2rem;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+}
+
+hr {
+  opacity: 0.1;
+}
+
+/*header*/
+#twoButton {
+  user-select: none;
+  width: 100%;
+  height: 3rem;
+  margin: 2rem;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: black;
+
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+
+  #en {
+    font-weight: 800;
+  }
+
+  #gr {
+    cursor: pointer;
+  }
+
+  button {
+    font-weight: 800;
+
+    transition: all 0.4s ease;
+  }
+
+  button:hover {
+    cursor: pointer;
+    color: aquamarine;
+    background-color: #343435;
+    box-shadow: 0px 20px 32px -5px rgba(0, 0, 0, 1);
+    transform: translateY(-2px);
+  }
+}
+
+/*sideBar*/
+aside {
+  width: 5rem;
+  min-height: 100dvh;
+  padding: 0.6rem;
+
+  background-color: #0b0c0e;
+  color: white;
+
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  transition: 0.8s;
+
+  #sideHeader {
+    margin-block: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  #sideInfo {
+    margin-top: auto;
+
+    div {
+      margin-block: 1rem;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-block: 1rem;
+
+    li {
+      width: 100%;
+    }
+  }
+}
+
+/*menuItems*/
+
+.sideBarItem {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.4rem;
+
+  transition: 200ms ease-in-out;
+  display: flex;
+  gap: 1.5rem;
+
+  text-decoration: none;
+
+  p {
+    transition: opacity 500ms ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  a {
+    pointer-events: none;
+  }
+}
+
+.sideBarItem:visited,
+.sideBarItem:active,
+.sideBarItem:link {
+  color: white;
+}
+
+.sideBarItem:hover,
+button:hover {
+  background-color: #1f2329;
+  color: aquamarine;
+}
+
+/*footer*/
+footer {
+  margin-top: auto;
+  padding: 2rem;
+
+  background-color: #0b0c0e;
+  width: 100%;
+
+  .container {
+    display: flex;
+    flex-wrap: warp;
+    .footerSocials {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      align-items: center;
+
+      div {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a {
+        margin: 0.2rem;
+        background-color: white;
+
+        border-radius: 14px;
+        display: flex;
+
+        transition: 400ms ease-in-out;
+
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+  }
+  .footerBottom {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+}
+
+.container {
+  margin: auto;
+  margin-block: 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+
+  .card {
+    width: 300px;
+    height: 300px;
+    background-color: #0b0c0e;
+
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+      margin: 2rem;
+      padding: 0.5rem;
+      font-size: 3.5rem;
+      color: aquamarine;
+      border: 2px solid aquamarine;
+      border-radius: 4rem;
+    }
+
+    h1 {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .cardInfo {
+      position: absolute;
+      border-radius: 0.4rem;
+      width: 300px;
+      height: 300px;
+      text-align: center;
+      padding: 2rem;
+      background-color: #0b0c0e;
+      opacity: 0;
+
+      transition: opacity 0.4s ease-in-out;
+    }
+  }
+}
+
+footer {
+  margin-top: auto;
+  padding: 2rem;
+
+  background-color: #0b0c0e;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+    color: white;
+    transition: 200ms;
+  }
+
+  a:hover {
+    color: aquamarine;
+    cursor: pointer;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: warp;
+    .footerSocials {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      align-items: center;
+
+      div {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a {
+        margin: 0.2rem;
+        background-color: white;
+
+        border-radius: 14px;
+        display: flex;
+
+        transition: 400ms ease-in-out;
+
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+
+      a:hover {
+        margin: 0;
+        padding: 0.2rem;
+        border-radius: 8px;
+        background-color: aquamarine;
+      }
+    }
+  }
+  .footerBottom {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+}
+
+#footerList {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  ul {
+    list-style: none;
+    li {
+      padding: 0.4rem;
+    }
+  }
+}

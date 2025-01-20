@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="slider-section">
+        <div class="slider-text">
+            <h1>LeaseVenue</h1>
+            <h3>YOUR HOBBY, OUR DUTY</h3>
+            <div class="slider-btn">
+                <a href="/index.html" class="btn-home">Home</a>
+                <a href="#" class="btn-contact">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    <img class="image" src="audi-r8-5869993_1280.jpg" alt="BMW image"/>
+        <div class="right-text">
+          <span class="Car">Audi R8</span>
+          <h2>Luxurious and Powerful</h2>
+          <hr>
+          <p class="paragraph"></p>
+          <p id="h4">The Audi R8 is a high-performance sports car known for its sleek design and exhilarating V10 engine, delivering both speed and precision.
+            It combines luxury and cutting-edge technology, making it a masterpiece on both the road and the track.</p>
+          <a href="R8/R8.html" class="btn-own">Rent Now</a>
+        </div>
+        <img class="image" src="rolls-royce-2362821_1280.jpg" alt="BMW image">
+        
+        <div class="right-text2">
+          <span class="Car">Rolls Royles Phantom</span>
+          <h2>Elegant and Opulent</h2>
+          <hr>
+          <p class="paragraph"></p>
+          <p id="h4">The Rolls-Royce Ghost epitomizes luxury, offering a serene and refined driving experience with impeccable craftsmanship.
+            Its powerful yet quiet engine and unparalleled comfort make it a symbol of modern elegance.</p>
+          <a href="Phantom/Phantom.html" class="btn-own">Rent Now</a>
+      </div>
+
+
+      <footer>
+        <hr />
+        <div class="container">
+          <div class="footerSocials">
+            <div>
+              <a
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                target="_blank"
+                ><img
+                  src="/src/img/icons/5282541_fb_social media_facebook_facebook logo_social network_icon.png"
+                />
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                target="_blank"
+                ><img
+                  src="/src/img/icons/5282544_camera_instagram_social media_social network_instagram logo_icon.png"
+                />
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                target="_blank"
+                ><img
+                  src="/src/img/icons/5282551_tweet_twitter_twitter logo_icon.png"
+                />
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                target="_blank"
+                ><img
+                  src="/src/img/icons/5282548_play_player_video_youtube_youtuble logo_icon.png"
+                />
+              </a>
+            </div>
+            <div>
+              Need a vehicle or equipment but don't want to buy it? We're your
+              one-stop shop for flexible leasing solutions. We offer a variety of
+              options to fit your budget and needs, from cars and trucks to heavy
+              equipment and technology.
+            </div>
+          </div>
+          <div id="footerList">
+            <div class="footerInfo">
+              <h1>About</h1>
+              <ul>
+                <li>
+                  <a href="/yiotawebproject/html/Services.html">Services</a>
+                </li>
+                <li><a href="/Pricing Plans/Pricing Plans.html">Pricing</a></li>
+                <li><a href="/Guide/Guide - LeaseVenue.html">Guide</a></li>
+                <li><a href="/royalty/royalty.html">Royalty</a></li>
+              </ul>
+            </div>
+            <div class="footerInfo">
+              <h1>Account</h1>
+              <ul>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    >Profile</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    >Settings</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    >Billings</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footerInfo">
+              <h1>Company</h1>
+              <ul>
+                <li>
+                  <a href="/yiotawebproject/html/policiesandguidelines.html"
+                    >Policy & Guidelines</a
+                  >
+                </li>
+                <li>
+                  <a href="/About Us/About Us.html">About Us</a>
+                </li>
+                <li>
+                  <a href="/yiotawebproject/html/businesspage.html">Business</a>
+                </li>
+                <li>
+                  <a href="/Locations/LeaseVenue - Locations.html">Location</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <section class="footerBottom">
+          <p class="sideName">© 2021 Leasing Company. All rights reserved.</p>
+          <p class="sideName">
+            <a href="">Terms</a>•<a href="">Privacy Policy</a>•<a href=""
+              >Cookies</a
+            >
+          </p>
+        </section>
+      </footer>
+       
+    </body>
+    <script>
+      const sideBarBtn = document.querySelectorAll(".sideBarItem");
+      const aside = document.querySelector("aside");
+      const sideBarLabel = document.querySelectorAll("p.sideName");
+  
+      /*sidebar*/
+      aside.addEventListener("click", () => {
+        aside.style.width = "16rem";
+  
+        /*showing item*/
+        sideBarLabel.forEach((label) => {
+          label.style.visibility = "visible";
+          label.style.opacity = "1";
+        });
+  
+        /*hiding items*/
+        aside.addEventListener("mouseleave", () => {
+          aside.style.width = "5rem";
+  
+          sideBarLabel.forEach((label) => {
+            label.style.visibility = "hidden";
+            label.style.opacity = ".5";
+          });
+        });
+      });
+    </script>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+.image{
+    width: 50%;
+    padding-top: 150px;
+    padding-left: 30px;
+}
+
+#right-text {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 500px;
+    height: 100px;
+    padding-top: 180px;
+}
+
+.Car{
+    color: aquamarine;
+}
+
+#h4{
+    position: absolute;
+    top: 80px;
+    padding-left: 250px;
+    padding-top: 180px;
+}
+
+.btn {
+    position: absolute;
+    top: 300px;
+    padding-left: 250px;
+    padding-top: 180px;
+
+    padding: 13px 26px;  
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid aquamarine;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: radial-gradient(circle, aquamarine);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: aquamarine;
+    color: #0d0d0d;
+    box-shadow: 0 0 15px aquamarine, 0 0 30 aquamarine, 0 0 45 aquamarine;
+}
+
+
+.paragraph{
+    position: relative;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.hid{
+    position: absolute;
+    right: 0;
+    width: 500px;
+    size: 10px;
+    font-size: 5px;
+
+}
+
+.cardsContainer {
+    padding-top: 75px;
+    display: flex;
+    justify-content: center;
+    margin-block: 2rem;
+    gap: 2rem;
+  }
+   
+  .royaltyCard {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    min-height: 400px;
+    max-width: 400px;
+    background-color: #0b0c0e;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+   
+    transition: 0.2s ease-in-out;
+   
+    ul {
+      padding-inline: 1rem;
+      li {
+        margin-block: 0.4rem;
+      }
+    }
+   
+
+  }
+  .royaltyCard:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }

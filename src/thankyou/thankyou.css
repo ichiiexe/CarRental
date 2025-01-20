@@ -1,0 +1,23 @@
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  em {
+    color: aquamarine;
+  }
+
+  a,
+  a:visited {
+    text-decoration: none;
+    color: white;
+
+    transition: 0.2s ease-in-out;
+  }
+
+  a:hover {
+    color: aquamarine;
+  }
+}
